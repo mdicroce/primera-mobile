@@ -6,15 +6,16 @@ import { createStackNavigator } from '@react-navigation/stack'
 import UserDetailScreen from './screens/UserDetailScreen'
 import UserListScreen from "./screens/UsersList"
 import CreateUserScreen from "./screens/CreateUserScreen"
+import PruebaGuardado from "./screens/PruebaGuardad"
+import SeeStored from "./screens/SeeStored"
 
 const Stack = createStackNavigator()
 
 function MyStack() {
   return (
     <Stack.Navigator>
-      <Stack.Screen name="createUserScreen" component={CreateUserScreen}/>
-      <Stack.Screen name="UsersList" component={UserListScreen} />
-      <Stack.Screen name="UserDetailScreen" component={UserDetailScreen}/>
+      <Stack.Screen name="PruebaGuardado" component={PruebaGuardado} />
+      <Stack.Screen name="SeeStored" component={SeeStored} />
     </Stack.Navigator>
   )
 }
